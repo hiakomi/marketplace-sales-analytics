@@ -1,0 +1,28 @@
+# Credentials and local settings
+.env
+.env.*
+!.env.example
+config.ini
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+# Python / IDE
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+# Local data and logs
+data/
+archive/
+logs/
+*.log
+*.dump
+*.backup
+pgdata/
+postgres_data/
+metabase-data/
+.DS_Store
+Thumbs.db
