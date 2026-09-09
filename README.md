@@ -23,7 +23,7 @@
 
 ![Общая сводка продаж: KPI и месячная динамика](docs/images/sales-overview.png)
 
-[Открыть обзорный дашборд в Metabase]([http://194.58.118.193:3000/dashboard/2-prodazhi-osnovnye-metrik?tab=6-%D0%BE%D0%B1%D1%89%D0%B0%D1%8F-%D1%81%D0%B2%D0%BE%D0%B4%D0%BA%D0%B0](http://194.58.118.193:3000/public/dashboard/978dff62-493d-4fd6-bb8e-1ac864d4224c)
+[Открыть обзорный дашборд в Metabase](http://194.58.118.193:3000/public/dashboard/978dff62-493d-4fd6-bb8e-1ac864d4224c)
 
 ### Анализ ассортимента
 
