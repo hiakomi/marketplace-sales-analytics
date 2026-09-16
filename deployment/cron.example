@@ -1,0 +1,3 @@
+# Ежедневная загрузка данных в 07:00 по системному времени сервера.
+# Переменные подключения читаются из локального .env, который не хранится в Git.
+0 7 * * * cd /opt/marketplace_etl && set -a && . ./.env && set +a && /opt/marketplace_etl/venv/bin/python /opt/marketplace_etl/daily_load.py >> /opt/marketplace_etl/daily_load.log 2>&1
