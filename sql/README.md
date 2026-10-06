@@ -34,13 +34,15 @@
 - [Распределение покупательских дней](customers/04_frequency_distribution.sql)
 - [RFM-оценки](customers/05_rfm_scores.sql)
 - [Бизнес-сегменты RFM](customers/06_rfm_segments.sql)
-- [Retention по когортам](customers/07_cohort_retention.sql)
-- [Взвешенная retention-кривая](customers/08_retention_curve.sql)
+- [Retention по когортам, включая нулевые наблюдаемые месяцы](customers/07_cohort_retention.sql)
+- [Взвешенная retention-кривая по всем подходящим когортам](customers/08_retention_curve.sql)
 - [Исследовательский LTV: переменный состав когорт](customers/09_ltv_exploration.sql)
 - [LTV M0–M6: фиксированные когорты](customers/10_ltv_fixed_cohorts.sql)
-- [Retention и выручка на клиента](customers/11_retention_revenue.sql)
+- [Retention и выручка фиксированных когорт января–июня, M0–M6](customers/11_retention_revenue.sql)
 - [Сценарный эффект роста M1-retention](customers/12_retention_scenarios.sql)
 - [Повторная активность за 30/60/90 дней](customers/13_repeat_rate.sql)
 - [Время до второго покупательского дня](customers/14_time_to_second_day.sql)
 
 Методологические ограничения и различия исследовательских/итоговых вариантов описаны в [документации](../docs/methodology.md).
+
+Запросы 07/08/11 учитывают нулевые наблюдаемые месяцы; будущие месяцы не считаются нулевым retention. Общая кривая 08 меняет состав допустимых когорт по горизонту, а 11 сохраняет фиксированный состав января–июня. [Локальные проверки SQL](../tests/README.md) используют синтетические данные и не заменяют пересчёт опубликованных агрегатов.

@@ -1,0 +1,14 @@
+{
+  "name": "marketplace-sql-regression-checks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test retention.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8"
+  }
+}
