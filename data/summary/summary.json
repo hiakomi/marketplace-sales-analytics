@@ -1,0 +1,339 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "analysis_period": {
+      "start_inclusive": "2023-01-01",
+      "end_exclusive": "2024-01-01"
+    },
+    "snapshot_documented_on": "2026-09-26",
+    "publication_prepared_on": "2026-10-06",
+    "data_status": "historical_aggregate_snapshot_not_a_current_database_recalculation",
+    "source": "Итоговые материалы исследования и обсуждение проекта от 26.09.2026; ссылки на отчёты в reports/README.md.",
+    "filter": "quantity > 0",
+    "currency_label": "RUB",
+    "currency_caveat": "Учебный источник; масштаб денежных сумм требует проверки перед бизнес-применением.",
+    "null_meaning": "Показатель не приведён в сохранённой сводке; null не равен нулю.",
+    "sku_count": 50000,
+    "customer_count": 864460,
+    "assortment_action_case_available": false,
+    "discount_action_case_available": false,
+    "fixed_cohorts": {
+      "first_purchase_months": "2023-01 through 2023-06",
+      "initial_customers": 630187,
+      "month_numbers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "rounding": "Проценты и суммы сохранены с точностью исходных сводок. ABC revenue_share_pct приблизительны. RFM содержит только пять сегментов; кроме ценных неактивных, доли округлены до 0.1 п. п.",
+    "recalculation": "Агрегаты не пересчитывались. Исправления логики SQL и синтетические тесты не являются источником этих значений."
+  },
+  "assortment_actions": [
+    {
+      "group": "Ядро ассортимента",
+      "sku_count": 18434,
+      "sku_share_pct": 36.87,
+      "revenue_share_pct": 57.26,
+      "units_share_pct": 40.78
+    },
+    {
+      "group": "Поддерживать и наблюдать",
+      "sku_count": 17657,
+      "sku_share_pct": 35.31,
+      "revenue_share_pct": 25.96,
+      "units_share_pct": 31.69
+    },
+    {
+      "group": "Волатильное ядро",
+      "sku_count": 3159,
+      "sku_share_pct": 6.32,
+      "revenue_share_pct": 9.39,
+      "units_share_pct": null
+    },
+    {
+      "group": "Массовые недорогие товары",
+      "sku_count": 7275,
+      "sku_share_pct": 14.55,
+      "revenue_share_pct": 3.18,
+      "units_share_pct": 15.36
+    },
+    {
+      "group": "Высокая выручка при низком объёме",
+      "sku_count": 1227,
+      "sku_share_pct": 2.45,
+      "revenue_share_pct": 2.79,
+      "units_share_pct": null
+    },
+    {
+      "group": "Потенциал роста",
+      "sku_count": 963,
+      "sku_share_pct": 1.93,
+      "revenue_share_pct": null,
+      "units_share_pct": null
+    },
+    {
+      "group": "Низкий приоритет",
+      "sku_count": 692,
+      "sku_share_pct": 1.38,
+      "revenue_share_pct": null,
+      "units_share_pct": null
+    },
+    {
+      "group": "Ревизия ассортимента",
+      "sku_count": 409,
+      "sku_share_pct": 0.82,
+      "revenue_share_pct": 0.17,
+      "units_share_pct": null
+    },
+    {
+      "group": "Приоритетная ревизия",
+      "sku_count": 184,
+      "sku_share_pct": 0.37,
+      "revenue_share_pct": 0.08,
+      "units_share_pct": 0.24
+    }
+  ],
+  "discount_actions": [
+    {
+      "group": "Нет выраженного сигнала",
+      "sku_count": 41498,
+      "sku_share_pct": 83.0,
+      "revenue_share_pct": 84.47
+    },
+    {
+      "group": "Кандидат на промо-тест",
+      "sku_count": 4399,
+      "sku_share_pct": 8.8,
+      "revenue_share_pct": 8.62
+    },
+    {
+      "group": "Высокая скидка, слабый сигнал",
+      "sku_count": 2441,
+      "sku_share_pct": 4.88,
+      "revenue_share_pct": 3.81
+    },
+    {
+      "group": "Кандидат на снижение скидки",
+      "sku_count": 1662,
+      "sku_share_pct": 3.32,
+      "revenue_share_pct": 3.1
+    }
+  ],
+  "abc_revenue": [
+    {
+      "class": "A",
+      "sku_count": 26996,
+      "sku_share_pct": 53.99,
+      "revenue_share_pct": 80.0
+    },
+    {
+      "class": "B",
+      "sku_count": 11509,
+      "sku_share_pct": 23.02,
+      "revenue_share_pct": 15.0
+    },
+    {
+      "class": "C",
+      "sku_count": 11495,
+      "sku_share_pct": 22.99,
+      "revenue_share_pct": 5.0
+    }
+  ],
+  "dual_abc": [
+    {
+      "segment": "AA",
+      "sku_count": 21593,
+      "revenue": 1116143323632,
+      "units_sold": 31840438
+    },
+    {
+      "segment": "AB",
+      "sku_count": 4176,
+      "revenue": 176933454029,
+      "units_sold": 4566112
+    },
+    {
+      "segment": "AC",
+      "sku_count": 1227,
+      "revenue": 46681583220,
+      "units_sold": 1106839
+    },
+    {
+      "segment": "BA",
+      "sku_count": 7649,
+      "revenue": 166554598730,
+      "units_sold": 10952739
+    },
+    {
+      "segment": "BB",
+      "sku_count": 2574,
+      "revenue": 56549621014,
+      "units_sold": 2798210
+    },
+    {
+      "segment": "BC",
+      "sku_count": 1286,
+      "revenue": 28103953886,
+      "units_sold": 1127275
+    },
+    {
+      "segment": "CA",
+      "sku_count": 7706,
+      "revenue": 56187002215,
+      "units_sold": 11026381
+    },
+    {
+      "segment": "CB",
+      "sku_count": 2504,
+      "revenue": 18326784541,
+      "units_sold": 2727999
+    },
+    {
+      "segment": "CC",
+      "sku_count": 1285,
+      "revenue": 9229382554,
+      "units_sold": 1129793
+    }
+  ],
+  "purchase_frequency": [
+    {
+      "active_days": "1",
+      "customer_count": 271199
+    },
+    {
+      "active_days": "2",
+      "customer_count": 271605
+    },
+    {
+      "active_days": "3",
+      "customer_count": 180480
+    },
+    {
+      "active_days": "4",
+      "customer_count": 89862
+    },
+    {
+      "active_days": "5",
+      "customer_count": 35536
+    },
+    {
+      "active_days": "6",
+      "customer_count": 11548
+    },
+    {
+      "active_days": "7",
+      "customer_count": 3244
+    },
+    {
+      "active_days": "8",
+      "customer_count": 776
+    },
+    {
+      "active_days": "9+",
+      "customer_count": 210
+    }
+  ],
+  "rfm_segments": [
+    {
+      "segment": "Перспективные",
+      "customer_share_pct": 20.4,
+      "revenue_share_pct": 24.1
+    },
+    {
+      "segment": "Лучшие",
+      "customer_share_pct": 8.5,
+      "revenue_share_pct": 20.0
+    },
+    {
+      "segment": "Ценные неактивные",
+      "customer_share_pct": 10.18,
+      "revenue_share_pct": 17.68
+    },
+    {
+      "segment": "Лояльные",
+      "customer_share_pct": 4.8,
+      "revenue_share_pct": 7.6
+    },
+    {
+      "segment": "Спящие",
+      "customer_share_pct": 19.1,
+      "revenue_share_pct": 3.3
+    }
+  ],
+  "repeat_rate": [
+    {
+      "window_days": 30,
+      "eligible_customers": 838623,
+      "repeat_customers": 127345,
+      "repeat_rate_pct": 15.19
+    },
+    {
+      "window_days": 60,
+      "eligible_customers": 814733,
+      "repeat_customers": 230952,
+      "repeat_rate_pct": 28.35
+    },
+    {
+      "window_days": 90,
+      "eligible_customers": 781906,
+      "repeat_customers": 307285,
+      "repeat_rate_pct": 39.3
+    }
+  ],
+  "cohort_metrics": [
+    {
+      "month_number": 0,
+      "initial_customers": 630187,
+      "retention_pct": 100,
+      "cumulative_revenue_per_original_customer": 907835,
+      "revenue_per_active_customer": 907835
+    },
+    {
+      "month_number": 1,
+      "initial_customers": 630187,
+      "retention_pct": 15.53,
+      "cumulative_revenue_per_original_customer": 1049421,
+      "revenue_per_active_customer": 911965
+    },
+    {
+      "month_number": 2,
+      "initial_customers": 630187,
+      "retention_pct": 15.77,
+      "cumulative_revenue_per_original_customer": 1192685,
+      "revenue_per_active_customer": 908178
+    },
+    {
+      "month_number": 3,
+      "initial_customers": 630187,
+      "retention_pct": 15.54,
+      "cumulative_revenue_per_original_customer": 1333794,
+      "revenue_per_active_customer": 907921
+    },
+    {
+      "month_number": 4,
+      "initial_customers": 630187,
+      "retention_pct": 15.96,
+      "cumulative_revenue_per_original_customer": 1480516,
+      "revenue_per_active_customer": 919538
+    },
+    {
+      "month_number": 5,
+      "initial_customers": 630187,
+      "retention_pct": 15.42,
+      "cumulative_revenue_per_original_customer": 1620941,
+      "revenue_per_active_customer": 910690
+    },
+    {
+      "month_number": 6,
+      "initial_customers": 630187,
+      "retention_pct": 15.51,
+      "cumulative_revenue_per_original_customer": 1763238,
+      "revenue_per_active_customer": 917487
+    }
+  ]
+}

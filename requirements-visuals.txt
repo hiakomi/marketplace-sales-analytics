@@ -1,0 +1,2 @@
+# Optional dependencies for scripts/build_summary_assets.py
+matplotlib>=3.8,<4

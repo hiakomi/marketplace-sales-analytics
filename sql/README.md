@@ -2,6 +2,10 @@
 
 Каждый файл содержит один самостоятельный запрос. Выполняйте нужный файл в DBeaver или Metabase на базе с таблицей `sales`. Все запросы исследования используют положительное количество и период 2023 года. Не запускайте весь каталог одновременно на VPS.
 
+## Ассортимент
+
+[Исследование и бизнес-выводы](../docs/analysis/assortment.md) · [Сохранённые агрегаты](../data/summary/README.md)
+
 - [ABC по выручке: товары](assortment/01_abc_product_scores.sql)
 - [ABC по выручке: сводка](assortment/02_abc_summary.sql)
 - [Двойной ABC: товары](assortment/03_dual_abc_scores.sql)
@@ -18,6 +22,12 @@
 - [Товары CCZ для рассмотрения](assortment/14_ccz_review.sql)
 - [CCZ: кандидаты по зафиксированным границам](assortment/15_ccz_priority_candidates.sql)
 - [Месячные продажи пяти выбранных SKU](assortment/16_candidate_monthly_sales.sql)
+Новые группы `assortment_action` и `discount_action` сохранены как агрегаты, без финальных CASE-правил. Девять сочетаний двойного ABC и девять групп действий — разные классификации. Запросы CCZ воспроизводят прежний отбор, а не новый список из 184 SKU.
+
+## Клиентская база
+
+[Исследование и программа CRM](../docs/analysis/customers.md) · [Сохранённые агрегаты](../data/summary/README.md)
+
 - [Метрики клиентов](customers/01_customer_metrics.sql)
 - [Сводка активности и ценности](customers/02_customer_summary.sql)
 - [Перцентили RFM](customers/03_rfm_percentiles.sql)
